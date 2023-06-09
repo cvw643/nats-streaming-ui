@@ -11,4 +11,4 @@ services:
       STAN_MONITOR_URL: "http://nats-streaming:8222"
       STAN_CLUSTER: "test-clusterd"
     ports:
-      - "8282:8282"
+      - "38282:38282"
