@@ -17,12 +17,12 @@ Powerful dashboard for the [Nats Streaming](https://nats-io.github.io/docs/nats_
 docker-compose up --build
 ```
 
-Follow the link http://127.0.0.1:8282
+Follow the link http://127.0.0.1:38282
 
 [Docker Image](https://hub.docker.com/r/gnurub/nats-streaming-ui)
 
 ```shell script
-docker run -d -e STAN_URL=nats://127.0.0.1:4222 -e STAN_MONITOR_URL=http://127.0.0.1:8222 -e STAN_CLUSTER=test-cluster -p 8282:8282 gnurub/nats-streaming-ui
+docker run -d -e STAN_URL=nats://127.0.0.1:4222 -e STAN_MONITOR_URL=http://127.0.0.1:8222 -e STAN_CLUSTER=test-cluster -p 38282:38282 gnurub/nats-streaming-ui
 ```
 
 ### Docker Compose example
@@ -40,7 +40,7 @@ services:
       STAN_MONITOR_URL: "http://nats-streaming:8222"
       STAN_CLUSTER: "test-cluster"
     ports:
-      - "8282:8282"
+      - "38282:38282"
 ```
 
 ## How to run locally
